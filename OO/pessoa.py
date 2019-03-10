@@ -14,3 +14,7 @@ if __name__ == '__main__':
     luciano = Pessoa(gerson, nome='Luciano')
     for filho in luciano.filhos:
         print(filho.nome)
+    luciano.sobrenome = 'Ramalho'
+    del  luciano.filhos
+    print(luciano.__dict__)
+    print(gerson.__dict__)
