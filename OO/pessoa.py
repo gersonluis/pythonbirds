@@ -1,4 +1,8 @@
 class Pessoa():
+    # criando atributo de classe
+    # quando tivermos um atributo com valor defaul criamos fora,
+    # do __init__, deste geito poupamos memoria
+    olhos = 2 # atributo defaul ou atributo de classe
     def __init__(self, *filhos, nome=None, idade=49):
         # criando primeiro atributo
         self.idade = idade
